@@ -1,0 +1,24 @@
+<recipes>
+    <recipe dificulty="5">
+        <name>Papates amb llet</name>
+        <ingredients>
+            <ingredient ammount="125" unit="grams" name="all"/>
+            <ingredient ammount="225" unit="grams" name="patata"/>
+            <ingredient ammount="1" unit="litre" name="llet"/>
+        </ingredients>
+    </recipe>
+    <recipe dificulty="8">
+        <name>beixamel</name>
+        <ingredients>
+            <ingredient ammount="225" unit="grams" name="farina"/>
+            <ingredient ammount="1" unit="litre" name="llet"/>
+        </ingredients>
+    </recipe>
+    <recipe dificulty="3">
+        <name>Espinacs</name>
+        <ingredients>
+            <ingredient ammount="225" unit="grams" name="farina"/>
+            <ingredient ammount="1" unit="litre" name="llet"/>
+        </ingredients>
+    </recipe>
+</recipes>
