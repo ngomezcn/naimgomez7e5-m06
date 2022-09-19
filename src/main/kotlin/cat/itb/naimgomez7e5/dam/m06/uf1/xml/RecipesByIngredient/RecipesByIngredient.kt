@@ -8,30 +8,51 @@ import io.ktor.client.request.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.json.Json
 import nl.adaptivity.xmlutil.serialization.XML
+import nl.adaptivity.xmlutil.serialization.XmlChildrenName
 import nl.adaptivity.xmlutil.serialization.XmlElement
-
+import kotlin.io.path.Path
+import kotlin.io.path.readText
 
 @Serializable
-@SerialName("restaurant")
-data class Restaurant(
-    val type: String = "restaurant de menú",
-    @XmlElement(true) val name: String,
-    @XmlElement(true) val address: String,
-    @XmlElement(true) val owner: String)
+@SerialName("recipes")
+data class Recipes(val recipes : List<Recipe>)
 
-suspend fun main(){
-    val url = "https://fp.mateuyabar.com/DAM-M06/UF1/exercicis/files/receptes.xml";
-    val client = HttpClient(CIO){
-        install(ContentNegotiation) {
-            json(Json {
-                ignoreUnknownKeys = true
-            })
-        }
-    }
-    val xml : String = client.get(url).body()
-    val restaurant : Restaurant = XML.decodeFromString(xml)
-    println(restaurant)
-    println(XML.encodeToString(restaurant))
+@Serializable
+@SerialName("recipe")
+data class Recipe(
+    val dificulty: String,
+    @XmlElement(true) val name: String,
+    @XmlChildrenName("ingredient", "", "") @SerialName("ingredients")  val ingredients : List<Ingredient>)
+
+@Serializable
+@SerialName("ingredient")
+data class Ingredient(
+    val ammount: String,
+    val unit: String,
+    val name: String)
+
+
+fun main(){
+    val xml = getXMLRecipes()
+
+    val recipes = getRecipesByIngredientName(xml, "llet")
+
+    recipes.forEach { println("${it.name} ${it.dificulty}") }
+}
+
+fun getRecipesByIngredientName(xml: String, ingName: String) : List<Recipe> {
+    var recipes : Recipes = XML.decodeFromString(xml)
+
+    val filteredRecipes = recipes.recipes.filter { recipe ->
+        recipe.ingredients.any { it.name == ingName}
+    }.sortedBy { it.dificulty }
+
+    return filteredRecipes
+}
+
+fun getXMLRecipes() : String {
+    val path = Path("/dades/NGOMEZ/M06/naimgomez7e5-m06/src/main/kotlin/cat/itb/naimgomez7e5/dam/m06/uf1/xml/RecipesByIngredient/receptes.xml")
+    val xml : String = path.readText()
+    return xml
 }

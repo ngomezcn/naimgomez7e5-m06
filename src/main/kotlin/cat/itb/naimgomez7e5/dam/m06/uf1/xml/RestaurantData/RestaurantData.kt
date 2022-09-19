@@ -12,7 +12,6 @@ import kotlinx.serialization.json.Json
 import nl.adaptivity.xmlutil.serialization.XML
 import nl.adaptivity.xmlutil.serialization.XmlElement
 
-
 @Serializable
 @SerialName("restaurant")
 data class Restaurant(
