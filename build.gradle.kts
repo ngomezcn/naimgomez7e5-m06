@@ -21,6 +21,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
     implementation("io.github.pdvrieze.xmlutil:core-jvm:0.84.2")
     implementation("io.github.pdvrieze.xmlutil:serialization-jvm:0.84.2")
+
+    implementation("de.brudaswen.kotlinx.serialization:kotlinx-serialization-csv:2.0.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.4.0")
 }
 
 tasks.test {
