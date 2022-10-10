@@ -32,7 +32,6 @@ data class Ingredient(
     val unit: String,
     val name: String)
 
-
 fun main(){
     val xml = getXMLRecipes()
 
@@ -42,7 +41,8 @@ fun main(){
 }
 
 fun getRecipesByIngredientName(xml: String, ingName: String) : List<Recipe> {
-    var recipes : Recipes = XML.decodeFromString(xml)
+    val recipes : Recipes = XML.decodeFromString(xml)
+
 
     val filteredRecipes = recipes.recipes.filter { recipe ->
         recipe.ingredients.any { it.name == ingName}
@@ -52,7 +52,8 @@ fun getRecipesByIngredientName(xml: String, ingName: String) : List<Recipe> {
 }
 
 fun getXMLRecipes() : String {
-    val path = Path("/dades/NGOMEZ/M06/naimgomez7e5-m06/src/main/kotlin/cat/itb/naimgomez7e5/dam/m06/uf1/xml/RecipesByIngredient/receptes.xml")
-    val xml : String = path.readText()
+//  val path = Path("/dades/NGOMEZ/M06/naimgomez7e5-m06/src/main/kotlin/cat/itb/naimgomez7e5/dam/m06/uf1/xml/RecipesByIngredient/receptes.xml")
+//  val xml : String = path.readText()
+    val xml = Recipes::class.java.getResource("/receptes.xml").readText()
     return xml
 }

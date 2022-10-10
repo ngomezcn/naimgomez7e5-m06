@@ -6,7 +6,6 @@ import kotlin.io.path.readText
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.csv.Csv
-import kotlinx.serialization.csv.CsvConfiguration
 import kotlinx.serialization.serializer
 import java.io.BufferedReader
 import java.io.FileReader
