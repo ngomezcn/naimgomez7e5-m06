@@ -1,0 +1,36 @@
+2022-11-07 18:58:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 18:58:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 18:58:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 18:59:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 18:59:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 18:59:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 19:00:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 19:00:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 19:00:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 19:00:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 19:00:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
+2022-11-07 19:00:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKOUTS" not found; SQL statement:
+INSERT INTO WORKOUTS (DURACIO, NOM) VALUES (?, ?) [42102-214]
