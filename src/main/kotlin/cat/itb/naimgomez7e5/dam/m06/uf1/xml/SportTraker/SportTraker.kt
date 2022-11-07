@@ -6,7 +6,7 @@ import java.util.*
 import kotlin.io.path.Path
 import kotlin.io.path.readText
 import kotlin.io.path.writeText
-
+/*
 @kotlinx.serialization.Serializable
 data class Workouts(val workouts: MutableList<Workout>)
 
@@ -47,3 +47,4 @@ fun main() {
 
     println("\nTemps total: ${workouts.workouts.sumOf { it.duracio }}")
 }
+*/

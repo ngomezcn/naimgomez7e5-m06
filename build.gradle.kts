@@ -26,6 +26,14 @@ dependencies {
     implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.0.7")
     implementation("de.brudaswen.kotlinx.serialization:kotlinx-serialization-csv:2.0.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.4.0")
+
+    implementation("com.h2database:h2:2.1.214")
+
+    implementation("org.slf4j:slf4j-simple:2.0.3")
+
+    implementation("org.jetbrains.exposed", "exposed-core", "0.40.1")
+    implementation("org.jetbrains.exposed", "exposed-dao", "0.40.1")
+    implementation("org.jetbrains.exposed", "exposed-jdbc", "0.40.1")
 }
 
 tasks.test {
