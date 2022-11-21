@@ -1,5 +1,3 @@
-package cat.itb.naimgomez7e5.dam.m06.uf2.exercicis
-
 import nl.adaptivity.xmlutil.serialization.XML
 import org.jetbrains.exposed.dao.id.IntIdTable
 import org.jetbrains.exposed.sql.*
